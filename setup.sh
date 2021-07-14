@@ -42,7 +42,7 @@ echo "\n# Setup z\nautoload -U compinit && compinit\nzstyle ':completion:*' menu
 cd ~/Downloads
 git clone https://github.com/Wildchild9/iTermHomebrewTheme.git
 cd iTermHomebrewTheme
-sed -E -i '' "s/\"Working Directory\" : \".*\"/\"Working Directory\" : \"$(echo "$(cd ~; pwd)" | sed 's/\//\\\\\\\//g')\"/" Homebrew.json
+sed -E -i '' "s/\"Working Directory\" : \".*\"/\"Working Directory\" : \"$(echo $HOME | sed 's/\//\\\\\\\//g')\"/" Homebrew.json
 cd ~
 
 # Install Homebrew dependencies
