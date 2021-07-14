@@ -28,7 +28,7 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Replace zsh
-sed -E -i '' 's/ZSH_THEME=".*"/ZSH_THEME="spaceship"/' ~/.zshrc
+sed -E -i '' 's/ZSH_THEME=".*"/ZSH_THEME="spaceship"\nSPACESHIP_BATTERY_SHOW=false/' ~/.zshrc
 sed -E -i '' 's/plugins\(git\)/plugins(\n  git\n  z\n  zsh-autosuggestions\n  zsh-syntax-highlighting\n)/g' ~/.zshrc
 
 # Add pasting speed up
