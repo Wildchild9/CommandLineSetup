@@ -31,7 +31,10 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 sed -E -i '' 's/ZSH_THEME=".*"/ZSH_THEME="spaceship"/' ~/.zshrc
 sed -E -i '' 's/plugins\(git\)/plugins(\n  git\n  z\n  zsh-autosuggestions\n  zsh-syntax-highlighting\n)/g' ~/.zshrc
 
+# Add pasting speed up
 echo "\n## Speed up for pasting\n# This speeds up pasting w/ autosuggest\n# https://github.com/zsh-users/zsh-autosuggestions/issues/238\npasteinit() {\n  OLD_SELF_INSERT=\${\${(s.:.)widgets[self-insert]}[2,3]}\n  zle -N self-insert url-quote-magic # I wonder if you'd need \`.url-quote-magic>\n}\n\npastefinish() {\n  zle -N self-insert \$OLD_SELF_INSERT\n}\nzstyle :bracketed-paste-magic paste-init pasteinit\nzstyle :bracketed-paste-magic paste-finish pastefinish" >> ~/.zshrc
+
+# Add z styling
 echo "\n# Setup z\nautoload -U compinit && compinit\nzstyle ':completion:*' menu select" >> ~/.zshrc
 
 # Install iTerm profile
