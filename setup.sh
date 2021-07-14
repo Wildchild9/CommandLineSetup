@@ -68,8 +68,7 @@ rvm use ruby --latest
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # Install bundler and cocoapods
-sudo gem install bundler
-sudo gem install cocoapods
+sudo gem install bundler cocoapods
 
 # Install yarn
 npm install --global yarn
