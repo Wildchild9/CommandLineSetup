@@ -17,6 +17,7 @@ git clone https://github.com/powerline/fonts.git
 fonts/install.sh
 rm -rf fonts
 cd ~
+rmdir .temp
 
 # Clone zsh extensions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
