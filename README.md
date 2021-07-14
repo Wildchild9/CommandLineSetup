@@ -17,4 +17,4 @@ A script that sets up your command line and installs basic tooling.
   - Select "Homebrew" in the side menu and go to Other Actions... and select "Set as Default".
   - While "Homebrew" is selected, go to the Text pane and ensure that the font is set to "Meslo LG M for Powerline"
 
-5. Start using iTerm2 as your default terminal and enjoy!
+5. Start using iTerm2 as your default command line application and enjoy!
