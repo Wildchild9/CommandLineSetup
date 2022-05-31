@@ -65,7 +65,7 @@ rvm install ruby --latest
 rvm use ruby --latest
 
 # Install and setup nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 # Install bundler and cocoapods
 sudo gem install bundler cocoapods
